@@ -1,13 +1,13 @@
+import 'bootstrap/dist/css/bootstrap.min.css'; //this line could be replaces by link in the index.html
+import { RouterProvider } from "react-router-dom";
 import './App.css';
-import Test from './Test';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import router from './router/router';
+
+
 
 function App() {
   return (
-    <div className="App">
-      App will be here
-      <Test />
-    </div>
+    <RouterProvider router={router} />
   );
 }
 
