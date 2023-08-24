@@ -1,8 +1,13 @@
+import CustomNavbar from "./CustomNavbar";
+
 const Homepage = () => {
   
   
   return (
-    <div>HOMEPAGE</div>
+    <div>
+      <CustomNavbar />
+      <h1>HOMEPAGE</h1>
+    </div>
   )
 }
 
