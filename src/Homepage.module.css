@@ -1,0 +1,25 @@
+.homepage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcomeBox {
+  background-color: rgb(246, 246, 242);
+  width: 60vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px rgb(200, 197, 197);
+
+}
+

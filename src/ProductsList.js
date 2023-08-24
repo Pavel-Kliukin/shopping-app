@@ -1,5 +1,5 @@
 import axios from "axios";
-import Product from "./Product";
+import ProductCard from "./ProductCard";
 import classes from "./ProductsList.module.css";
 import CustomNavbar from "./CustomNavbar";
 
@@ -12,19 +12,14 @@ const ProductsList = () => {
 
   return (
 
-    // this is my part of the code:
-
     <div className={classes.productsList}>
       <CustomNavbar />
       <div className={classes.products}>
         {Array.isArray(products) && products.map((product) => (
-          <Product key={product?.id} {...product} /> //{product?.id} We need "?" in case if we don't have any products yet, it will not brake the code
+          <ProductCard key={product?.id} {...product} /> //{product?.id} We need "?" in case if we don't have any products yet, it will not brake the code
         ))}
       </div>
     </div>
-
-    // This is what Martin did:
-
 
   )
 }

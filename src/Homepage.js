@@ -1,12 +1,17 @@
 import CustomNavbar from "./CustomNavbar";
+import classes from "./Homepage.module.css";
 
 const Homepage = () => {
   
   
   return (
-    <div>
+    <div className={classes.homepage}>
       <CustomNavbar />
-      <h1>HOMEPAGE</h1>
+      <div className={classes.main}>
+        <div className={classes.welcomeBox}>
+          <h1>Welcome to our fake shop</h1>
+        </div>
+      </div>
     </div>
   )
 }
