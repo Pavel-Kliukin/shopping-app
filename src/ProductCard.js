@@ -23,7 +23,7 @@ const ProductCard = (props) => {
       </Card.Body>
       <ListGroup className="list-group-flush">
         <ListGroup.Item>{category}</ListGroup.Item>
-        <ListGroup.Item>Rating: {rating.rate}</ListGroup.Item>
+        <ListGroup.Item>Rating: {rating.rate} <font color="grey">({rating.count} votes)</ font></ListGroup.Item>
         <ListGroup.Item>ID: {id}</ListGroup.Item>
       </ListGroup>
     </Card>
